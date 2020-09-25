@@ -1,0 +1,76 @@
+.dropdown-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5em 0;
+
+  list-style: none;
+
+  // Hide submenu
+  .dropdown {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+
+    z-index: 2;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 100%;
+    padding: 1em 0;
+
+    opacity: 0;
+
+    text-align: center;
+  }
+
+  .dropdown li {
+    min-width: 110%;
+    padding: 1em 0.1em;
+
+    background: map-get($colors, 'white-darken-1');
+  }
+
+  a {
+    color: map-get($colors, 'grey-darken-2');
+    text-decoration: none;
+  }
+
+  a:focus {
+    outline: none;
+  }
+
+  li {
+    position: relative;
+    min-width: 8em;
+    margin: 0;
+    padding: 1em 0.5em;
+
+    transition: border-bottom 0.23s ease-in-out, background 0.23s linear;
+
+    background: map-get($colors, 'white');
+
+    text-align: center;
+
+    cursor: pointer;
+  }
+
+  li:hover,
+  li:focus-within {
+    background: map-get($colors, 'grey-darken-1');
+
+  }
+
+  li:hover .dropdown,
+  li:hover .dropdown:hover,
+  li:focus-within .dropdown,
+  li:focus-within .dropdown:hover {
+    display: flex;
+    visibility: visible;
+
+    opacity: 1;
+  }
+}
+

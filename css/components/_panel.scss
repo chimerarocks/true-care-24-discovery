@@ -1,0 +1,24 @@
+.panel {
+  padding: 20px;
+
+  border-radius: 10px;
+
+  background-color: map-get($colors, 'white');
+
+  .panel-title {
+    color: #354650;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
+  }
+
+  .panel-body {
+    margin-top: 20px;
+  }
+}
+
+
+
+

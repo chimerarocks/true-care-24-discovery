@@ -1,0 +1,10 @@
+.container-header {
+  display: flex;
+  grid-area: header;
+  justify-content: flex-end;
+  padding: 0 20px;
+
+  background-color: map-get($colors, 'white');
+
+  text-align: end;
+}

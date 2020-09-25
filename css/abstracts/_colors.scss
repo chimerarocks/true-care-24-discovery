@@ -1,0 +1,18 @@
+$colors: (
+  'blue': #54d0ff,
+  'blue-darken': #264e66,
+  'blue-grey': #354650,
+  'blue-grey-lighten': #728b9b,
+  'white': #fff,
+  'white-darken-1': #f5f9fc,
+  'white-darken-2': #f4f7f9,
+  'white-darken-3': #ebeff4,
+  'white-darken-4': #dbe5eb,
+  'green': #29c581,
+  'gray': #b9c6ce,
+  'gray-darken-1': #8f9c9c,
+  'gray-darken-2': #676d71,
+);
+
+// FONT
+$primary-font-color: map-get($colors, 'blue-grey');

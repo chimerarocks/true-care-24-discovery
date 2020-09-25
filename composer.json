@@ -1,0 +1,6 @@
+{
+    "name": "chimera/twillio",
+    "require": {
+        "twilio/sdk": "^6.10"
+    }
+}

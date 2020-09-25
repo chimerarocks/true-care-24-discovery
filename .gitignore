@@ -1,0 +1,5 @@
+.idea
+.npm
+assets
+node_modules
+vendor

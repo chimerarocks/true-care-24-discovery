@@ -1,0 +1,74 @@
+.datatable {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  color: $primary-font-color;
+  letter-spacing: 0.0861328px;
+  text-align: left;
+
+  tr {
+    height: 50px;
+    padding: 16px 0;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.0861328px;
+    line-height: 17px;
+  }
+
+  tr:first-child {
+    height: 25px;
+  }
+
+  tr:nth-child(odd) {
+    background-color: map-get($colors, 'white-darken-2');
+  }
+
+  th {
+    padding: 3px 0;
+
+    color: map-get($colors, 'blue-grey-lighten');
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  th:first-child,
+  tr td:first-child {
+    padding-left: 20px;
+  }
+
+  tr td:first-child {
+    color: #8f9c9c;
+    font-weight: normal;
+  }
+
+  .type-column img {
+    height: 16px;
+  }
+
+  .type-column img:first-child {
+    padding-right: 20px;
+  }
+
+  .name-column {
+    color: $primary-font-color;
+    font-weight: 700;
+  }
+
+  img {
+    height: 20%;
+    margin: 1px 2px;
+  }
+
+  .actions-column {
+    display: flex;
+    justify-content: space-around;
+    width: 180px;
+    padding-top: 10px;
+    float: right;
+  }
+}

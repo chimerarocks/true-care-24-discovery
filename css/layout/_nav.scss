@@ -1,0 +1,38 @@
+.container-nav {
+  grid-area: nav;
+  padding: 30px 10px;
+
+  background-color: map-get($colors, 'blue-darken');
+
+  text-align: center;
+
+  .nav-menu {
+    padding-inline-start: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin-top: 30px;
+  }
+
+  .nav-menu a {
+    display: block;
+
+    color: map-get($colors, 'white');
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .nav-menu img {
+    display: block;
+    height: 25px;
+    margin: auto auto 8px;
+
+    text-align: center;
+  }
+
+}
+

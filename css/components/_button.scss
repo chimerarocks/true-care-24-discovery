@@ -1,0 +1,35 @@
+$radial-button-gradient: radial-gradient(map-get($colors, 'blue-grey') 2px, transparent 2px);
+
+.btn {
+  width: 60px;
+  height: 30px;
+
+  border: 0;
+  border-radius: 4px;
+
+  color: map-get($colors, 'white');
+  font-size: 13px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.call-button {
+  background-color: map-get($colors, 'green');
+}
+
+.chat-button {
+  background-color: map-get($colors, 'blue');
+}
+
+.options-button {
+  width: 32px;
+
+  border: 0;
+
+  background-color: map-get($colors, 'white');
+  background-image: $radial-button-gradient, $radial-button-gradient, $radial-button-gradient;
+  background-position: center -7px, center center, center 7px;
+}

@@ -1,0 +1,238 @@
+@import 'vendors/normalize.css';
+html,
+body {
+  height: 100%;
+  color: #354650;
+  font-size: 14px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "nav header" "nav main";
+  grid-template-columns: 70px auto;
+  grid-template-rows: 1fr 16fr;
+  min-height: 100%;
+  background-color: #ebeff4;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../assets/Fonts/Lato/Lato-Regular.ttf"), url("../../assets/Fonts/Lato/Lato-Bold.ttf"), url("../../assets/Fonts/Lato/Lato-Light.ttf");
+}
+body {
+  font-family: "Lato", serif;
+}
+
+.container-header {
+  display: flex;
+  grid-area: header;
+  justify-content: flex-end;
+  padding: 0 20px;
+  background-color: #fff;
+  text-align: end;
+}
+
+.container-main {
+  grid-area: main;
+  padding: 20px;
+}
+
+.container-nav {
+  grid-area: nav;
+  padding: 30px 10px;
+  background-color: #264e66;
+  text-align: center;
+}
+.container-nav .nav-menu {
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-nav .nav-menu li {
+  margin-top: 30px;
+}
+.container-nav .nav-menu a {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+.container-nav .nav-menu img {
+  display: block;
+  height: 25px;
+  margin: auto auto 8px;
+  text-align: center;
+}
+
+.btn {
+  width: 60px;
+  height: 30px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.call-button {
+  background-color: #29c581;
+}
+
+.chat-button {
+  background-color: #54d0ff;
+}
+
+.options-button {
+  width: 32px;
+  border: 0;
+  background-color: #fff;
+  background-image: radial-gradient(#354650 2px, transparent 2px), radial-gradient(#354650 2px, transparent 2px), radial-gradient(#354650 2px, transparent 2px);
+  background-position: center -7px, center center, center 7px;
+}
+
+.datatable {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  color: #354650;
+  letter-spacing: 0.0861328px;
+  text-align: left;
+}
+.datatable tr {
+  height: 50px;
+  padding: 16px 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.0861328px;
+  line-height: 17px;
+}
+.datatable tr:first-child {
+  height: 25px;
+}
+.datatable tr:nth-child(odd) {
+  background-color: #f4f7f9;
+}
+.datatable th {
+  padding: 3px 0;
+  color: #728b9b;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+.datatable th:first-child,
+.datatable tr td:first-child {
+  padding-left: 20px;
+}
+.datatable tr td:first-child {
+  color: #8f9c9c;
+  font-weight: normal;
+}
+.datatable .type-column img {
+  height: 16px;
+}
+.datatable .type-column img:first-child {
+  padding-right: 20px;
+}
+.datatable .name-column {
+  color: #354650;
+  font-weight: 700;
+}
+.datatable img {
+  height: 20%;
+  margin: 1px 2px;
+}
+.datatable .actions-column {
+  display: flex;
+  justify-content: space-around;
+  width: 180px;
+  padding-top: 10px;
+  float: right;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5em 0;
+  list-style: none;
+}
+.dropdown-menu .dropdown {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 100%;
+  padding: 1em 0;
+  opacity: 0;
+  text-align: center;
+}
+.dropdown-menu .dropdown li {
+  min-width: 110%;
+  padding: 1em 0.1em;
+  background: #f5f9fc;
+}
+.dropdown-menu a {
+  text-decoration: none;
+}
+.dropdown-menu a:focus {
+  outline: none;
+}
+.dropdown-menu li {
+  position: relative;
+  min-width: 8em;
+  margin: 0;
+  padding: 1em 0.5em;
+  transition: border-bottom 0.23s ease-in-out, background 0.23s linear;
+  background: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.dropdown-menu li:hover .dropdown,
+.dropdown-menu li:hover .dropdown:hover,
+.dropdown-menu li:focus-within .dropdown,
+.dropdown-menu li:focus-within .dropdown:hover {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+.panel {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.panel .panel-title {
+  color: #354650;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 18px;
+}
+.panel .panel-body {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
